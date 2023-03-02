@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/main.css";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={"container"}>
       <Head>
         <title>Replicate + Next.js</title>
       </Head>
@@ -54,7 +54,7 @@ export default function Home() {
         <a href="https://replicate.com/stability-ai/stable-diffusion">stability-ai/stable-diffusion</a>:
       </p>
 
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={"form"} onSubmit={handleSubmit}>
         <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
         <button type="submit">Go!</button>
       </form>
@@ -64,7 +64,7 @@ export default function Home() {
       {prediction && (
         <div>
           {prediction.output && (
-            <div className={styles.imageWrapper}>
+            <div className={"imageWrapper"}>
               <Image
                 fill
                 src={prediction.output[prediction.output.length - 1]}
