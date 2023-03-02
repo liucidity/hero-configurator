@@ -1,6 +1,4 @@
-//poll for prediction results
 export default async function handler(req, res) {
-
   const response = await fetch(
     "https://api.replicate.com/v1/predictions/" + req.query.id,
     {
@@ -19,5 +17,4 @@ export default async function handler(req, res) {
 
   const prediction = await response.json();
   res.end(JSON.stringify(prediction));
-
 }

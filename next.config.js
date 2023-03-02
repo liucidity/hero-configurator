@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "replicate.com"
+        hostname: "replicate.com",
       },
       {
         protocol: "https",
@@ -13,6 +13,6 @@ const nextConfig = {
       },
     ],
   },
-}
+};
 
 module.exports = nextConfig
