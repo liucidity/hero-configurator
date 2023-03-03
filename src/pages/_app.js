@@ -1,5 +1,5 @@
 import '@/styles/main.css'
-import Nav from '../../components/nav'
+import Nav from '../../components/shared/nav'
 
 export default function App({ Component, pageProps }) {
   return (
